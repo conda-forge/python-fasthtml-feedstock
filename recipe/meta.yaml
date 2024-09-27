@@ -1,5 +1,5 @@
 {% set name = "python-fasthtml" %}
-{% set version = "0.6.8" %}
+{% set version = "0.6.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a4773ae18f5b9394679ce19eac89fa5214800194c57cf9d55aa7353dbde50f33
+  sha256: e2c2667831c59638b0e29b3f8d25a18ed9b80500b99b8aff9a4a945b9efe04d8
 
 build:
   entry_points:
