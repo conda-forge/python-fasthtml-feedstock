@@ -1,5 +1,5 @@
 {% set name = "python-fasthtml" %}
-{% set version = "0.6.9" %}
+{% set version = "0.6.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e2c2667831c59638b0e29b3f8d25a18ed9b80500b99b8aff9a4a945b9efe04d8
+  sha256: 707f129bd73d2bc821fd90b2b90f6bb8874f0a8d2f2de28c4c3080b7d576c62c
 
 build:
   entry_points:
@@ -24,7 +24,7 @@ requirements:
     - setuptools
   run:
     - python >=3.10
-    - fastcore >=1.7.8
+    - fastcore >=1.7.10
     - python-dateutil
     - starlette >0.33
     - oauthlib
