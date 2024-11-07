@@ -1,5 +1,3 @@
-schema_version: 1
-
 context:
   name: python-fasthtml
   version: 0.9.1
