@@ -1,14 +1,13 @@
 context:
-  name: python-fasthtml
   version: 0.9.1
   python_min: "3.10" # remove this line once https://github.com/prefix-dev/rattler-build/pull/1122 is available
 
 package:
-  name: ${{ name|lower }}
+  name: python-fasthtml
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/python-fasthtml/python-fasthtml-${{ version }}.tar.gz
   sha256: 95fd510c7b71bee14b49d35d3367345c16c23df9eb23810c413c38f64eb61ae8
 
 build:
@@ -56,4 +55,3 @@ about:
 extra:
   recipe-maintainers:
     - synapticarbors
-
