@@ -1,14 +1,15 @@
 context:
-  version: 0.9.1
-  python_min: "3.10" # remove this line once https://github.com/prefix-dev/rattler-build/pull/1122 is available
+  version: 0.12.4
+  python_min: "3.10"
 
 package:
   name: python-fasthtml
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/p/python-fasthtml/python-fasthtml-${{ version }}.tar.gz
-  sha256: 95fd510c7b71bee14b49d35d3367345c16c23df9eb23810c413c38f64eb61ae8
+  url: https://pypi.org/packages/source/p/python-fasthtml/python_fasthtml-${{ version }}.tar.gz
+  sha256: f85d4a23be88cc633af58094108094dbe3edb87a28542a8fbd35dbd85d51895d
+
 
 build:
   number: 0
@@ -21,7 +22,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - setuptools
   run:
@@ -31,9 +32,9 @@ requirements:
     - starlette >0.33
     - oauthlib
     - itsdangerous
-    - uvicorn >=0.30
+    - uvicorn-standard >=0.30
     - httpx
-    - fastlite >=0.0.9
+    - fastlite >=0.1.1
     - python-multipart
     - beautifulsoup4
 
@@ -42,9 +43,13 @@ tests:
       imports:
         - fasthtml
       pip_check: true
+      python_version: ${{ python_min }}.*
   - script:
       - fh_railway_link --help
       - fh_railway_deploy --help
+    requires:
+      - python ${{ python_min }}.*
+
 
 about:
   summary: The fastest way to create an HTML app
