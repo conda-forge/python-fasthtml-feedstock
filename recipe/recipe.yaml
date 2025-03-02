@@ -47,8 +47,9 @@ tests:
   - script:
       - fh_railway_link --help
       - fh_railway_deploy --help
-    requires:
-      - python ${{ python_min }}.*
+    requirements:
+      run:
+        - python ${{ python_min }}.*
 
 
 about:
