@@ -27,7 +27,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - fastcore >=1.7.18
+    - fastcore >=1.8.1
     - python-dateutil
     - starlette >0.33
     - oauthlib
