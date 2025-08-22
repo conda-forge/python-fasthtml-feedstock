@@ -1,6 +1,6 @@
 context:
-  version: "0.12.24"
-  python_min: "3.10"
+  version: 0.12.25
+  python_min: '3.10'
 
 package:
   name: python-fasthtml
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-fasthtml/python_fasthtml-${{ version }}.tar.gz
-  sha256: 86bd30fd8e9b64fd52227656c303582efa8d7a16c365d1b2e81f24e9839287cc
+  sha256: 3d87588269c316afa022bfff60536a3d992b40750f838e4bdb64a0d40511ec1d
 
 
 build:
@@ -32,12 +32,11 @@ requirements:
     - starlette >0.33
     - oauthlib
     - itsdangerous
-    - uvicorn-standard >=0.30
     - httpx
     - fastlite >=0.1.1
     - python-multipart
     - beautifulsoup4
-
+    - uvicorn >=0.30
 tests:
   - python:
       imports:
