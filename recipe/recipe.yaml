@@ -1,5 +1,5 @@
 context:
-  version: 0.12.25
+  version: 0.12.26
   python_min: '3.10'
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-fasthtml/python_fasthtml-${{ version }}.tar.gz
-  sha256: 3d87588269c316afa022bfff60536a3d992b40750f838e4bdb64a0d40511ec1d
+  sha256: 02abdb17bf035a234e5fe20e84a98d9e948a22919c35121be7847989c231c501
 
 
 build:
@@ -36,7 +36,7 @@ requirements:
     - fastlite >=0.1.1
     - python-multipart
     - beautifulsoup4
-    - uvicorn-standard >=0.30
+    - uvicorn >=0.30
 tests:
   - python:
       imports:
