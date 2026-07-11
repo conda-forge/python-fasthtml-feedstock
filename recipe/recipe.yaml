@@ -1,5 +1,5 @@
 context:
-  version: 0.14.5
+  version: 0.14.6
   python_min: '3.10'
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-fasthtml/python_fasthtml-${{ version }}.tar.gz
-  sha256: d0181c36415f9bbe242e1d05de1fb5279a14aa9c605c244e76ae95a32650eda4
+  sha256: 11b535e752b4f79e8da7eb6d55928d2ced0ed7a085619ac89a6e943a76915773
 
 
 build:
@@ -27,7 +27,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - fastcore >=1.14.2
+    - fastcore >=2.0.4
     - python-dateutil
     - starlette >=1.0.1
     - oauthlib
