@@ -1,5 +1,5 @@
 context:
-  version: "0.14.9"
+  version: 0.14.11
   python_min: '3.11'
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-fasthtml/python_fasthtml-${{ version }}.tar.gz
-  sha256: e4a84b5d6efc68bb0803a6ae832e041dbdd76137a0c56d320fa10692c3ab7b97
+  sha256: 7d054cdb35999f7d61ef582e22efe0d74fce37499327e4ebf2680d6e18bb568d
 
 
 build:
@@ -32,7 +32,6 @@ requirements:
     - starlette >=1.0.1
     - oauthlib
     - itsdangerous
-    - fastlite >=0.1.1
     - python-multipart
     - beautifulsoup4
     - uvicorn >=0.30
