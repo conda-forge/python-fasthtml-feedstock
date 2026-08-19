@@ -41,7 +41,9 @@ tests:
       imports:
         - fasthtml
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version: 
+        - ${{ python_min }}.*
+        - "*"
   - script:
       - fh_railway_link --help
       - fh_railway_deploy --help
