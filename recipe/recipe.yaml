@@ -1,6 +1,5 @@
 context:
-  version: 0.14.12
-  python_min: '3.11'
+  version: "0.14.13"
 
 package:
   name: python-fasthtml
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-fasthtml/python_fasthtml-${{ version }}.tar.gz
-  sha256: b0d3dbc7e48d70ed74a0320011d0701492a92b2f1117e457ad6dd0cea485cdf4
+  sha256: fbdef364d3824f5db2f40e0884b4541f00b2d7ec925e5e1e62949b2ede7daf5d
 
 
 build:
@@ -41,7 +40,7 @@ tests:
       imports:
         - fasthtml
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
         - "*"
   - script:
