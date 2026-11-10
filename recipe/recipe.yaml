@@ -1,5 +1,5 @@
 context:
-  version: "0.14.21"
+  version: 0.14.22
 
 package:
   name: python-fasthtml
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-fasthtml/python_fasthtml-${{ version }}.tar.gz
-  sha256: 9887bd492a56856c68fe6d361c6e6c0830e38d33f8649f8b4a56a00f68447b52
+  sha256: 9a83cd1e25327e2c8fa13a8b6cb7f084a0588ee14e75e1bb8f5fe4f53d67fd75
 
 
 build:
@@ -35,6 +35,7 @@ requirements:
     - beautifulsoup4
     - uvicorn >=0.30
     - httpx2
+    - websockets >=14
 tests:
   - python:
       imports:
@@ -42,7 +43,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
   - script:
       - fh_railway_link --help
       - fh_railway_deploy --help
