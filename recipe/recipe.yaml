@@ -1,5 +1,5 @@
 context:
-  version: 0.14.22
+  version: "0.14.23"
 
 package:
   name: python-fasthtml
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-fasthtml/python_fasthtml-${{ version }}.tar.gz
-  sha256: 9a83cd1e25327e2c8fa13a8b6cb7f084a0588ee14e75e1bb8f5fe4f53d67fd75
+  sha256: 00befe5fdb8a79685bac90e0ef402984fccefa7aac968b28fed6d930978e26f8
 
 
 build:
